@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
+set(CMAKE_BUILD_TYPE Debug)
 
 project(ImageLoggerProject)
 
@@ -15,7 +16,7 @@ include_directories(
 )
 
 add_executable(test_IMAGE src/test_IMAGE.cpp src/Image.cpp )
-add_executable(test_IMAGELOGGER src/test_IMAGELOGGER.cpp src/Image.cpp src/ImageLogger.cpp src/ImageLogReader.cpp)
+# add_executable(test_IMAGELOGGER src/test_IMAGELOGGER.cpp src/Image.cpp src/ImageLogger.cpp src/ImageLogReader.cpp)
 target_link_libraries(test_IMAGE ${OpenCV_LIBS} ${Boost_LIBRARIES})
-target_link_libraries(test_IMAGELOGGER ${OpenCV_LIBS} ${Boost_LIBRARIES})
+# target_link_libraries(test_IMAGELOGGER ${OpenCV_LIBS} ${Boost_LIBRARIES})
 
