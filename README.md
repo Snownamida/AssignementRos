@@ -14,7 +14,7 @@ The dependancies are :
 
  To install the dependancies with apt 
  ```bash
- sudo apt install libopencv-dev lib
+ sudo apt install libopencv-dev
  sudo apt install libboost-all-dev
  sudo apt install cmake 
  ```
